@@ -1,5 +1,41 @@
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes scale {
+	from {
+		transform: scale(1.15, 1.15);
+	}
+
+	to {
+		transform: scale(1.6, 1.6);
+	}
+}
+
+:root {
+	/*--bgc: #FCB;*/
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
+	/*background-color: var(--bgc);*/
+	margin: 0px;
+	padding: 0px;
+}
+
+body {	
+	overflow: hidden;
+}
+
+#particles-js-wrapper {
+	/*animation: spin 30s infinite linear;*/
+}
+
+#particles-js {
+	font-size: 0px;
+	/*background-color: var(--bgc);*/
+	height: 120vh;
+	width: 120vw;
+	animation: scale 10s infinite alternate ease-in-out;
 }
